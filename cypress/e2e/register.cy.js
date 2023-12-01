@@ -145,7 +145,7 @@ it ('Register as a new user - Last name required field not filled', function () 
     cy.get('[data-test="dob-error"] > div').contains('Date of Birth is required.')
    })
 
-   it ('Register as a new user - Date of birth required field not filled', function () {
+   it ('Register as a new user - Postcode required field not filled', function () {
     var user = `${Date.now()}@test.com`
     cy.visit('https://practicesoftwaretesting.com/#/')
     cy.get('[data-test="nav-sign-in"]').click()
